@@ -1,0 +1,63 @@
+body {
+  font-family: 'Times New Roman', sans-serif;
+}
+main {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/rer.jpeg) center no-repeat;
+  background-size: cover;
+  height: 45rem;
+}
+header {
+  padding-top: 2em;
+  font-size: 20px;
+  color: #fff;
+}
+.logo {
+  text-align: center;
+}
+.main_content {
+  margin-top: 10rem;
+  text-align: center;
+  color: #fff;
+}
+.main_content h1 {
+  font-size: 68px;
+}
+.main_content h2 {
+  line-height: 3rem;
+  font-size: 20px;
+}
+.second {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.about {
+  padding-top: 3rem;
+}
+.about h1 {
+  font-size: 42px;
+}
+.about h2 {
+  font-size: 36px;
+}
+.fotos {
+  display: inline-block;
+}
+.fotos img {
+  margin: 6px;
+  padding: 0;
+}
+.service {
+  background-color: #F5F5F5;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.services {
+  text-align: center;
+}
+.secline {
+  padding-top: 30px;
+}
+.phone-link {
+  text-decoration: none;
+  color: #fff;
+}
