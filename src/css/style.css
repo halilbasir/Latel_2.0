@@ -34,7 +34,8 @@ header {
   padding-top: 3rem;
 }
 .about h1 {
-  font-size: 42px;
+  font-size: 49px;
+  font-weight: bold;
 }
 .about h2 {
   font-size: 36px;
