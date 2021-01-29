@@ -1,8 +1,8 @@
 body {
-  font-family: 'Times New Roman', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .siren {
-  color: #2060ff;
+  color: #fff;
 }
 main {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/rer.jpeg) center no-repeat;
@@ -40,8 +40,8 @@ header {
   font-size: 49px;
   font-weight: bold;
 }
-.about h2 {
-  font-size: 36px;
+.about p {
+  font-size: 26px;
 }
 .fotos {
   display: inline-block;
@@ -52,13 +52,15 @@ header {
 }
 .service {
   background-color: #F5F5F5;
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-bottom: 6rem;
 }
 .services {
   text-align: center;
 }
 .light {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: #fff;
 }
@@ -86,6 +88,18 @@ header {
   color: #3377E4;
   text-decoration: none;
 }
+.abaut {
+  margin-bottom: 4rem;
+}
+.foot p {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-size: 42px;
+  margin-top: 4rem;
+  text-align: center;
+}
 @media (max-width: 576px) {
   .head {
     text-align: center;
@@ -93,6 +107,9 @@ header {
 }
 @media (max-width: 992px) {
   .about {
+    text-align: center;
+  }
+  .fotos {
     text-align: center;
   }
 }
