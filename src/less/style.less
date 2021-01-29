@@ -1,6 +1,9 @@
 body{
 	font-family: 'Times New Roman', sans-serif;
 }
+.siren{
+	color: #2060ff;
+}
 main{
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/rer.jpeg) center no-repeat;
 	background-size: cover;	
@@ -36,7 +39,7 @@ header{
 }
 .about{
 	padding-top: 3rem;
-	h1{
+	h3{
 		font-size: 49px;
 		font-weight: bold;
 	}
@@ -61,11 +64,45 @@ header{
 	text-align: center;
 
 }
-.secline{
-	padding-top: 30px;
-}
-.phone-link{
+
+.light{
 
 	text-decoration: none;
 	color:#fff; 
+}
+.dark{
+	font-size:40px;
+	display: block;
+	text-decoration: none;
+	color:#000;
+}
+.foot{
+	line-height:5rem;
+}
+.footer{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.developer{
+	background-color: #DFE5E7;
+}
+.me{
+	padding-top: 1rem;
+	font-size: 20px;
+	a{
+		
+		color: #3377E4;
+		text-decoration: none;
+	}
+}
+@media (max-width:576px) {
+	.head{
+		text-align: center;
+	}
+}
+@media (max-width:992px) {
+	.about{
+		text-align: center;
+	}
+	
 }
