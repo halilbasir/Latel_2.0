@@ -5,7 +5,7 @@ body {
   color: #fff;
 }
 main {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/rer.jpeg) center no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/rer.jpeg) center no-repeat;
   background-size: cover;
   height: 45rem;
 }
@@ -25,7 +25,7 @@ header {
 .main_content h1 {
   font-size: 68px;
 }
-.main_content h2 {
+.main_content p {
   line-height: 3rem;
   font-size: 20px;
 }
