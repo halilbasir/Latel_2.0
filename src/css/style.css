@@ -7,7 +7,7 @@ body {
 main {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/rer.jpeg) center no-repeat;
   background-size: cover;
-  height: 45rem;
+  min-height: 730px;
 }
 header {
   padding-top: 2em;
@@ -58,6 +58,9 @@ header {
 .services {
   text-align: center;
 }
+.services h3 {
+  line-height: 3rem;
+}
 .light {
   padding: 0;
   margin: 0;
@@ -74,7 +77,7 @@ header {
   line-height: 5rem;
 }
 .footer {
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
 }
 .developer {
@@ -97,7 +100,13 @@ header {
 }
 h4 {
   font-size: 42px;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.hprice {
+  padding-bottom: 3rem;
+}
+.price_photo {
   text-align: center;
 }
 @media (max-width: 576px) {
@@ -106,10 +115,37 @@ h4 {
   }
 }
 @media (max-width: 992px) {
+  .main_content p {
+    padding-bottom: 7rem;
+  }
+  .main_content h1 {
+    font-size: 50px;
+  }
   .about {
     text-align: center;
   }
   .fotos {
     text-align: center;
+  }
+  .foot .adres {
+    font-size: 32px;
+  }
+  .services img {
+    padding-top: 2.5rem;
+  }
+  .about h3 {
+    margin-top: 0 ;
+    margin-bottom: 3rem ;
+  }
+  .about {
+    padding: 2rem;
+  }
+  .price_photo img {
+    width: 330px;
+  }
+}
+@media (max-width: 1200px) {
+  .price_photo img {
+    width: 330px;
   }
 }
