@@ -1,16 +1,16 @@
-body{
+body {
 	font-family: 'Open Sans', sans-serif;
 	background: #FEFBFF;
 }
-.monobrow{
+.monobrow {
 	height: 1.6rem;
-	background-color: #282828;
-	.mail{
+	background-color: #40444C;
+	.mail { 
 		color: #fff;
 		text-decoration: none;
 	}
 }
-.header{
+.header {
 	padding: 2em;
 	font-size: 20px;
 	background: #fff;
@@ -20,15 +20,24 @@ body{
 	&-logo {
 		margin: 0 2rem;
 	}
-	&-text {
-		
+	a {
+		font-size: .875em;
+		font-weight: 600;
+		margin-left: 1rem;
+		color: #40444C;
+		text-decoration: none;
+	}
+	&-address {
+		cursor: pointer;
+		font-size: .875em;
+		color: #40444C;
 	}
 	
 }
 
-.string() {
+.strype() {
 	.section {
-	&-item {
+	&-wrap {
 		font-family: 'Montserrat', sans-serif;	
 		text-align: center;
 		margin: 2.5rem;
@@ -42,23 +51,27 @@ body{
 		text-align: center;
 	}
 	
-	
-	&-title:after,
-	&-title:before {
-		position: absolute;
-		content: "";
-		display: block;
-		width: 22rem;
-		border-bottom: 1px solid #949494;
-	}
-
+	&-title:before,
 	&-title:after {
-		top: 48%;
-		right: 4rem;
+		content: "";
+		position: absolute;
+		top: 50%;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		width: 40%;
+		height: 1px;
+		background: #8e8e8e;
+		opacity: 0.35;
+		border: solid #FFF;
+		border-width: 0 50px;
 	}
 	&-title:before {
-		top: 48%;
-		left: 4rem;
+		margin-left: -40%;
+	}
+	&-title:after {
+		margin-right: -37%;
 	}
 }
 
@@ -82,85 +95,52 @@ body{
 		font-size: 26px;
 	}
 }
-.world {
-	margin: 5rem 0;
-	.string();
-	.section {
-		&-title:after,
-		&-title:before {
-		position: absolute;
-		content: "";
-		display: block;
-		width: 20rem;
-		border-bottom: 1px solid #949494;
-	}
-		&-title:after {
-			top: 48%;
-			right: -1rem;
-		}
-		&-title:before {
-			top: 48%;
-			left: -1rem;
-		}
-}
-}
-.fotos-item {
-	display: flex;
-	justify-content: space-between;
 
-	img {
-		padding: 0 2rem;
-	}
-	h3 {
-		margin: 1.5rem;
-		text-align: center;
-		font-size: 1.3rem;
-		text-transform: uppercase;
-		
-	}
 
-}
 
 .services {
-	.string();
+	.strype();
 	padding: 3rem;
-
 	&-content{
 	text-align: center;
 		h3 {
 			line-height: 3rem;	
 		}
 	}
+	&-block {
+		padding: 1rem;
+	}
+}
+
+.beauty {
+	.strype();
+	margin: 5rem 0;
+	
+}
+.fotos-item {
+	display: flex;
+
+	img {
+		padding: 0 2rem;
+	}
+	h5 {
+		margin-top: 1rem;
+		margin-left: 2rem;
+		text-align: center;
+		font-weight: 500;
+		text-transform: uppercase;
+		
+	}
+
 }
 
 .contacts {
-	.string();
-	.section {
-		&-title:after,
-		&-title:before {
-		position: absolute;
-		content: "";
-		display: block;
-		width: 25rem;
-		border-bottom: 1px solid #949494;
-	}
-		&-title:after {
-			top: 48%;
-			right: 1rem;
-		}
-		&-title:before {
-			top: 48%;
-			left: 1rem;
-		}
-}
+	.strype();
 	background: #E9EDF0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	line-height: 3rem;
 	padding-bottom: 3rem;
-	&-cart{
-
-	}
 	h2 {
 		text-transform: uppercase;
 		padding: 3rem;
@@ -187,62 +167,56 @@ body{
 	}
 	
 }
-.footer{
 
-	margin-bottom: 3rem;
-}
-.developer{
+.footer {
 	background-color: #1C1D1E;
-}
-.me{
-	padding-top: 1rem;
-	font-size: 20px;
-	color: #FFF;
-	a{
-		
+		&-me {
+		padding-top: 1rem;
+		font-size: 20px;
+		color: #FFF;
+		a {
 		color: #BABDBF;
 		text-decoration: none;
+		}
 	}
 }
 
-.hprice{
-	padding-bottom: 3rem;
-}
-.price_photo{
-	text-align: center;
-}
+
 @media (max-width: 1400px) {
-		.string();
-		.section {
-			&-title:after,
-			&-title:before {
-			position: absolute;
-			content: "";
-			display: block;
-			width: 15rem;
-			border-bottom: 1px solid #949494;
-		}
-			&-title:after {
-				top: 48%;
-				right: 1rem;
-			}
-			&-title:before {
-				top: 48%;
-				left: 1rem;
-			}
+	.fotos img {
+		padding: 0 2.5rem;
 	}
 }
+@media (max-width: 1200px) {
+	.monobrow {
+		display: none;
+	}
+	
+	.fotos-item {
+		margin-left: 5rem;
+		h5 {
+		margin-top: 1rem;
+		margin-left: -5rem;
+	}
+				
+	}
+}
+@media (max-width: 992px) {
+	.fotos-item {
+		margin-left: 0rem;
+		h5 {
+		margin: 1rem;
+		
+	}
+				
+	}
+}
+
 @media (max-width:576px) {
 	.head{
 		text-align: center;
 	}
-	.footer script{
-		width: 10rem;
-	}
-	.dark{
-		line-height:3rem;
-		font-size:25px;
-	}
+	
 
 	
 }
@@ -288,9 +262,16 @@ body{
 		margin-top: 1rem;
 	}
 }
-@media (max-width:1200px){
-	.price_photo img{
-		width: 330px;
-	}
 
+@media (max-width: 770px) {
+	.header {
+		text-align: center;
+		&-text p {
+			display: none;
+		}
+		&-logo {
+			display: block;
+			margin: 1rem auto;
+		}
+	}
 }
