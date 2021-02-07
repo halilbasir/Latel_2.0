@@ -1,38 +1,32 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background: #FEFBFF;
 }
-.siren {
+.monobrow {
+  height: 1.6rem;
+  background-color: #282828;
+}
+.monobrow .mail {
   color: #fff;
+  text-decoration: none;
 }
-main {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/rer.jpeg) center no-repeat;
+.header {
+  padding: 2em;
+  font-size: 20px;
+  background: #fff;
+}
+.header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-logo {
+  margin: 0 2rem;
+}
+.main {
+  background: url(../img/rer.jpeg) center no-repeat;
   background-size: cover;
   min-height: 730px;
-}
-header {
-  padding-top: 2em;
-  font-size: 20px;
-  color: #fff;
-}
-.logo {
-  text-align: center;
-}
-.main_content {
-  margin-top: 10rem;
-  text-align: center;
-  color: #fff;
-}
-.main_content h1 {
-  font-size: 68px;
-}
-.main_content p {
-  padding-top: 3rem;
-  line-height: 3rem;
-  font-size: 30px;
-}
-.second {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .about {
   padding-top: 3rem;
@@ -44,80 +38,247 @@ header {
 .about p {
   font-size: 26px;
 }
-.fotos {
-  display: inline-block;
+.world {
+  margin: 5rem 0;
 }
-.fotos img {
-  margin: 6px;
-  padding: 0;
+.world .section-item {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 2.5rem;
 }
-.service {
-  background-color: #F5F5F5;
-  padding-top: 2rem;
-  padding-bottom: 6rem;
-}
-.services {
+.world .section-title {
+  color: #14161E;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
   text-align: center;
 }
-.services h3 {
+.world .section-title:after,
+.world .section-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22rem;
+  border-bottom: 1px solid #949494;
+}
+.world .section-title:after {
+  top: 48%;
+  right: 4rem;
+}
+.world .section-title:before {
+  top: 48%;
+  left: 4rem;
+}
+.world .section-title:after,
+.world .section-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20rem;
+  border-bottom: 1px solid #949494;
+}
+.world .section-title:after {
+  top: 48%;
+  right: -1rem;
+}
+.world .section-title:before {
+  top: 48%;
+  left: -1rem;
+}
+.fotos-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.fotos-item img {
+  padding: 0 2rem;
+}
+.fotos-item h3 {
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.services {
+  padding: 3rem;
+}
+.services .section-item {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 2.5rem;
+}
+.services .section-title {
+  color: #14161E;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+}
+.services .section-title:after,
+.services .section-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22rem;
+  border-bottom: 1px solid #949494;
+}
+.services .section-title:after {
+  top: 48%;
+  right: 4rem;
+}
+.services .section-title:before {
+  top: 48%;
+  left: 4rem;
+}
+.services-content {
+  text-align: center;
+}
+.services-content h3 {
   line-height: 3rem;
 }
-.light {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  color: #fff;
+.contacts {
+  background: #E9EDF0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 3rem;
+  padding-bottom: 3rem;
 }
-.dark {
-  font-size: 35px;
+.contacts .section-item {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 2.5rem;
+}
+.contacts .section-title {
+  color: #14161E;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+}
+.contacts .section-title:after,
+.contacts .section-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22rem;
+  border-bottom: 1px solid #949494;
+}
+.contacts .section-title:after {
+  top: 48%;
+  right: 4rem;
+}
+.contacts .section-title:before {
+  top: 48%;
+  left: 4rem;
+}
+.contacts .section-title:after,
+.contacts .section-title:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25rem;
+  border-bottom: 1px solid #949494;
+}
+.contacts .section-title:after {
+  top: 48%;
+  right: 1rem;
+}
+.contacts .section-title:before {
+  top: 48%;
+  left: 1rem;
+}
+.contacts h2 {
+  text-transform: uppercase;
+  padding: 3rem;
+  text-align: center;
+}
+.contacts-salon {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.contacts-adress {
   display: block;
   text-decoration: none;
   color: #000;
 }
-.adres {
-  font-size: 35px;
+.contacts-day {
+  font-size: 1.2em;
+}
+.contacts a {
   display: block;
+  font-size: 1.2em;
   text-decoration: none;
   color: #000;
-}
-.foot {
-  line-height: 5rem;
-  margin-top: 2.5rem;
-}
-.cart {
-  margin-top: 5.5rem;
 }
 .footer {
   margin-bottom: 3rem;
 }
 .developer {
-  background-color: #DFE5E7;
+  background-color: #1C1D1E;
 }
 .me {
   padding-top: 1rem;
   font-size: 20px;
+  color: #FFF;
 }
 .me a {
-  color: #3377E4;
+  color: #BABDBF;
   text-decoration: none;
-}
-.abaut {
-  margin-bottom: 4rem;
-}
-.foot p {
-  margin: 0;
-  padding: 0;
-}
-h4 {
-  font-size: 42px;
-  margin-top: 3rem;
-  text-align: center;
 }
 .hprice {
   padding-bottom: 3rem;
 }
 .price_photo {
   text-align: center;
+}
+@media (max-width: 1400px) {
+  .section-item {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 2.5rem;
+  }
+  .section-title {
+    color: #14161E;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+  }
+  .section-title:after,
+  .section-title:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22rem;
+    border-bottom: 1px solid #949494;
+  }
+  .section-title:after {
+    top: 48%;
+    right: 4rem;
+  }
+  .section-title:before {
+    top: 48%;
+    left: 4rem;
+  }
+  .section-title:after,
+  .section-title:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 15rem;
+    border-bottom: 1px solid #949494;
+  }
+  .section-title:after {
+    top: 48%;
+    right: 1rem;
+  }
+  .section-title:before {
+    top: 48%;
+    left: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .head {

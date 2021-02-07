@@ -1,43 +1,77 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	background: #FEFBFF;
 }
-.siren{
-	color: #fff;
+.monobrow{
+	height: 1.6rem;
+	background-color: #282828;
+	.mail{
+		color: #fff;
+		text-decoration: none;
+	}
 }
-main{
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../img/rer.jpeg) center no-repeat;
-	background-size: cover;	
-	min-height: 730px;
-
-}
-header{
-	padding-top: 2em;
+.header{
+	padding: 2em;
 	font-size: 20px;
-	color:#fff;
-	head{
+	background: #fff;
+	&-item {
+		display: flex;
+	}
+	&-logo {
+		margin: 0 2rem;
+	}
+	&-text {
+		
 	}
 	
 }
-.logo{
-	text-align: center;
-}
-.main_content{
-	margin-top: 10rem;	
-	text-align: center;	
-	color:#fff;
-	h1{
-		font-size: 68px;
+
+.string() {
+	.section {
+	&-item {
+		font-family: 'Montserrat', sans-serif;	
+		text-align: center;
+		margin: 2.5rem;
 	}
-	p{
-		padding-top: 3rem;
-		line-height: 3rem;
-		font-size: 30px;	
+
+	&-title {
+		color: #14161E;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 2em;
+		text-align: center;
+	}
+	
+	
+	&-title:after,
+	&-title:before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 22rem;
+		border-bottom: 1px solid #949494;
+	}
+
+	&-title:after {
+		top: 48%;
+		right: 4rem;
+	}
+	&-title:before {
+		top: 48%;
+		left: 4rem;
 	}
 }
-.second{
-	padding-top: 6rem;
-	padding-bottom: 6rem;
+
+
 }
+.main {
+	background: url(../img/rer.jpeg) center no-repeat;
+	background-size: cover;	
+	min-height: 730px;
+
+}	
+	
+
 .about{
 	padding-top: 3rem;
 	h3{
@@ -48,87 +82,155 @@ header{
 		font-size: 26px;
 	}
 }
-.fotos{
-	display:inline-block;
-	img{
-	margin: 6px;
-	padding: 0;
+.world {
+	margin: 5rem 0;
+	.string();
+	.section {
+		&-title:after,
+		&-title:before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 20rem;
+		border-bottom: 1px solid #949494;
+	}
+		&-title:after {
+			top: 48%;
+			right: -1rem;
+		}
+		&-title:before {
+			top: 48%;
+			left: -1rem;
+		}
+}
+}
+.fotos-item {
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		padding: 0 2rem;
+	}
+	h3 {
+		margin: 1.5rem;
+		text-align: center;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		
 	}
 
 }
-.service{
-	background-color: #F5F5F5;
-	padding-top: 2rem;
-	padding-bottom: 6rem;
-}
-.services{
 
+.services {
+	.string();
+	padding: 3rem;
+
+	&-content{
 	text-align: center;
-	h3{
-		line-height: 3rem;	
+		h3 {
+			line-height: 3rem;	
+		}
 	}
 }
 
-.light{
-	padding: 0;
-	margin: 0;
-	text-decoration: none;
-	color:#fff; 
+.contacts {
+	.string();
+	.section {
+		&-title:after,
+		&-title:before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 25rem;
+		border-bottom: 1px solid #949494;
+	}
+		&-title:after {
+			top: 48%;
+			right: 1rem;
+		}
+		&-title:before {
+			top: 48%;
+			left: 1rem;
+		}
 }
-.dark{
-	font-size:35px;
-	display: block;
-	text-decoration: none;
-	color:#000;
-}
-.adres{
-	font-size:35px;
-	display: block;
-	text-decoration: none;
-	color:#000;
-}
-.foot{
-	line-height:5rem;
-	margin-top: 2.5rem;
-}
-.cart{
-	margin-top:5.5rem;
+	background: #E9EDF0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	line-height: 3rem;
+	padding-bottom: 3rem;
+	&-cart{
+
+	}
+	h2 {
+		text-transform: uppercase;
+		padding: 3rem;
+		text-align: center;
+	}
+	&-salon {
+		font-weight: 600;
+		font-size: 1.5em;
+	}
+	&-adress {
+		display: block;
+		text-decoration: none;
+		color:#000;
+	}
+	&-day {
+		font-size: 1.2em;
+			
+	}
+	a {
+		display: block;
+		font-size: 1.2em;
+		text-decoration: none;
+		color: #000;
+	}
+	
 }
 .footer{
 
 	margin-bottom: 3rem;
 }
 .developer{
-	background-color: #DFE5E7;
+	background-color: #1C1D1E;
 }
 .me{
 	padding-top: 1rem;
 	font-size: 20px;
+	color: #FFF;
 	a{
 		
-		color: #3377E4;
+		color: #BABDBF;
 		text-decoration: none;
 	}
 }
-.abaut{
-	margin-bottom: 4rem;
-}
-.foot{
-	p{
-		margin: 0;
-		padding: 0;
-	}
-}
-h4{
-	font-size:42px;
-	margin-top: 3rem;
-	text-align: center;
-}
+
 .hprice{
 	padding-bottom: 3rem;
 }
 .price_photo{
 	text-align: center;
+}
+@media (max-width: 1400px) {
+		.string();
+		.section {
+			&-title:after,
+			&-title:before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 15rem;
+			border-bottom: 1px solid #949494;
+		}
+			&-title:after {
+				top: 48%;
+				right: 1rem;
+			}
+			&-title:before {
+				top: 48%;
+				left: 1rem;
+			}
+	}
 }
 @media (max-width:576px) {
 	.head{
