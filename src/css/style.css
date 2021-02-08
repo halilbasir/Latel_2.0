@@ -19,20 +19,24 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.header .contacts-salon {
+  display: none;
+}
 .header-logo {
   margin: 0 2rem;
 }
 .header a {
   position: absolute;
-  top: 11%;
-  right: 30%;
+  top: 14%;
+  right: 26%;
   font-size: 1em;
   font-weight: 600;
   color: #8A8B8A;
   text-decoration: none;
 }
 .header-address {
-  line-height: 2;
+  text-align: center;
+  line-height: 1.8;
   cursor: pointer;
   font-size: .875em;
   color: #8A8B8A;
@@ -227,6 +231,7 @@ body {
 @media (max-width: 1400px) {
   .header a {
     position: absolute;
+    top: 23%;
     right: 20%;
   }
   .fotos img {
@@ -236,7 +241,7 @@ body {
 @media (max-width: 1200px) {
   .header a {
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 10%;
   }
   .header span {
@@ -293,7 +298,12 @@ body {
 }
 @media (max-width: 770px) {
   .header {
+    padding: 1em;
     text-align: center;
+  }
+  .header .contacts-salon {
+    display: block;
+    margin-bottom: 1rem;
   }
   .header span {
     display: block;
