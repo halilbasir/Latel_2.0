@@ -310,6 +310,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .contacts-item {
+    padding-left: 2rem;
+  }
   .contacts-address {
     font-size: 1.1rem;
   }
@@ -329,6 +332,9 @@ body {
   }
   .beauty .section-title {
     font-size: 1.8rem;
+  }
+  .contacts-item {
+    padding-left: 1rem;
   }
   .contacts .section-title {
     font-size: 1.8rem;
