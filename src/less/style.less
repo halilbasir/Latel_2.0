@@ -1,6 +1,5 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: #FEFBFF;
 }
 .monobrow {
 	height: 1.6rem;
@@ -21,16 +20,19 @@ body {
 		margin: 0 2rem;
 	}
 	a {
-		font-size: .875em;
+		position: absolute;
+		top: 11%;
+		right: 30%;
+		font-size: 1em;
 		font-weight: 600;
-		margin-left: 1rem;
-		color: #40444C;
+		color: #8A8B8A;
 		text-decoration: none;
 	}
 	&-address {
+		line-height: 2;
 		cursor: pointer;
 		font-size: .875em;
-		color: #40444C;
+		color: #8A8B8A;
 	}
 	
 }
@@ -47,7 +49,8 @@ body {
 		color: #14161E;
 		position: relative;
 		text-transform: uppercase;
-		font-size: 2em;
+		font-size: 2rem;
+		line-height: 1.5;
 		text-align: center;
 	}
 	
@@ -81,30 +84,16 @@ body {
 	background: url(../img/rer.jpeg) center no-repeat;
 	background-size: cover;	
 	min-height: 730px;
-
 }	
 	
-
-.about{
-	padding-top: 3rem;
-	h3{
-		font-size: 49px;
-		font-weight: bold;
-	}
-	p{
-		font-size: 26px;
-	}
-}
-
-
-
 .services {
 	.strype();
 	padding: 3rem;
 	&-content{
 	text-align: center;
 		h3 {
-			line-height: 3rem;	
+			margin-top: 1rem;
+			line-height: 1.5;	
 		}
 	}
 	&-block {
@@ -115,11 +104,10 @@ body {
 .beauty {
 	.strype();
 	margin: 5rem 0;
-	
+
 }
 .fotos-item {
 	display: flex;
-
 	img {
 		padding: 0 2rem;
 	}
@@ -127,7 +115,7 @@ body {
 		margin-top: 1rem;
 		margin-left: 2rem;
 		text-align: center;
-		font-weight: 500;
+		font-weight: 600;
 		text-transform: uppercase;
 		
 	}
@@ -139,7 +127,7 @@ body {
 	background: #E9EDF0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	line-height: 3rem;
+	line-height: 2;
 	padding-bottom: 3rem;
 	h2 {
 		text-transform: uppercase;
@@ -148,22 +136,23 @@ body {
 	}
 	&-salon {
 		font-weight: 600;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
-	&-adress {
+	&-address {
 		display: block;
 		text-decoration: none;
+		font-size: 1.2rem;
 		color:#000;
 	}
-	&-day {
-		font-size: 1.2em;
-			
-	}
 	a {
-		display: block;
-		font-size: 1.2em;
+		margin-right: 3rem;
+		font-size: 1.2rem;	
 		text-decoration: none;
 		color: #000;
+
+	}
+	&-inst {
+		display: inline-block;
 	}
 	
 }
@@ -171,7 +160,7 @@ body {
 .footer {
 	background-color: #1C1D1E;
 		&-me {
-		padding-top: 1rem;
+		padding: 1rem;
 		font-size: 20px;
 		color: #FFF;
 		a {
@@ -183,89 +172,92 @@ body {
 
 
 @media (max-width: 1400px) {
+	.header {
+		a {
+			position: absolute;
+			right: 20%;
+		}
+	}
+	
 	.fotos img {
 		padding: 0 2.5rem;
 	}
 }
 @media (max-width: 1200px) {
+	.header {
+		a {
+			position: absolute;
+			top: 5%;
+			right: 10%;
+		}
+		span {
+			display: none;
+		}
+	}
 	.monobrow {
 		display: none;
 	}
-	
+	.services .section-title:before {
+		display: none;
+	}
+	 .services .section-title:after {
+	 	display: none;
+	 }
+	 .beauty .section-title:before {
+		display: none;
+	}
+	 .beauty .section-title:after {
+	 	display: none;
+	 }
+	 .contacts .section-title:before {
+		display: none;
+	}
+	 .contacts .section-title:after {
+	 	display: none;
+	 }
+
 	.fotos-item {
 		margin-left: 5rem;
 		h5 {
 		margin-top: 1rem;
 		margin-left: -5rem;
-	}
+		}
 				
 	}
 }
 @media (max-width: 992px) {
-	.fotos-item {
+	.header {
+		a {
+			display: none;
+		}
+	}
+	.fotos {
+		text-align: center;
+		&-item {
 		margin-left: 0rem;
-		h5 {
-		margin: 1rem;
-		
-	}
-				
-	}
-}
-
-@media (max-width:576px) {
-	.head{
-		text-align: center;
-	}
-	
-
-	
-}
-@media (max-width:992px) {
-	.main_content{
-		margin-top: 5rem;
-		p{
-			padding-bottom: 7rem;	
-		}
-
-			h1{
-				font-size: 50px;	
-			}
-	}
-	.about{
-		text-align: center;
-	}
-	.fotos{
-		text-align: center;
-	}
-	.foot{
-		.adres{
-			font-size: 25px;
-			line-height:3rem;
+			h5 {
+				margin: 1rem;
+			}			
 		}
 	}
-	.services{
-		img{
-		padding-top: 2.5rem;	
-		}
+	.contacts .section-title {
+		padding-top: 2rem;
 	}
-	.about h3{
-		margin-top: 0 ;
-		margin-bottom: 3rem ;
+	.contacts h2 {
+		padding: 0;
 	}
-	.about{
-		padding: 2rem;	
-	}
-	.price_photo img{
-		width: 330px;
-	}
-	.cart{
-		margin-top: 1rem;
-	}
+
 }
 
 @media (max-width: 770px) {
 	.header {
 		text-align: center;
+		span {
+			display: block;
+		}
+		a {
+			display: none;
+		}
 		&-text p {
 			display: none;
 		}
@@ -275,3 +267,41 @@ body {
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.contacts {
+		&-address {
+			font-size: 1.1rem;	
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.fotos {
+		padding: 0;
+		&-item img {
+			width: 320px;
+			height: 250px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.services .section {
+		&-title {
+			font-size: 1.8rem;
+		}
+	}
+	.beauty .section {
+		&-title {
+			font-size: 1.8rem;
+		}
+	}
+	.contacts .section {
+		&-title {
+			font-size: 1.8rem;
+		}
+	}
+
+} 
